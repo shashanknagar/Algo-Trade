@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+
+# Never commit real credentials -- Groww key/secret and the DB password are
+# system/user environment variables only, never a file in this repo.
+.env
+.env.*
+
+# Downloaded instrument master cache and run logs -- regenerable, not source.
+data/instrument_master.csv
+logs/*.log

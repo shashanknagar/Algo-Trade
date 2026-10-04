@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(update-config)",
+      "Skill(update-config:*)",
+      "WebSearch",
+      "WebFetch(domain:groww.in)",
+      "WebFetch(domain:pypi.org)",
+      "Bash(pip --version)",
+      "Bash(docker --version)",
+      "Bash(docker compose *)",
+      "Bash(git --version)",
+      "Bash(python -m py_compile src/algotrade/*.py scripts/*.py)",
+      "Bash(pip install *)",
+      "Bash(python -c ' *)",
+      "Bash(PKG=\"C:\\\\Users\\\\shash\\\\AppData\\\\Local\\\\Packages\\\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\\\LocalCache\\\\local-packages\\\\Python313\\\\site-packages\\\\growwapi\" *)",
+      "Read(//c/Users/shash/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/growwapi/**)",
+      "Bash(python scripts/check_env.py)",
+      "PowerShell(Get-Command docker)",
+      "PowerShell(Get-Process \"Docker Desktop\" -ErrorAction SilentlyContinue)",
+      "PowerShell(docker --version)",
+      "PowerShell(& \"C:\\\\Users\\\\shash\\\\AppData\\\\Local\\\\Programs\\\\DockerDesktop\\\\resources\\\\bin\\\\docker.exe\" version --format '{{.Server.Version}}')",
+      "PowerShell(& \"C:\\\\Users\\\\shash\\\\AppData\\\\Local\\\\Programs\\\\DockerDesktop\\\\resources\\\\bin\\\\docker.exe\" ps)"
+    ]
+  }
+}

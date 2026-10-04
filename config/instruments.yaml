@@ -1,0 +1,19 @@
+# Phase 0 watchlist. exchange/segment/trading_symbol are matched against Groww's public
+# instrument master (https://growwapi-assets.groww.in/instruments/instrument.csv) at run
+# time. If Groww's exact symbol spelling differs from what's here, the resolver logs an
+# "unresolved watchlist entry" warning instead of crashing -- check logs/*.log after the
+# first run and correct the trading_symbol values against the downloaded master CSV
+# (cached at data/instrument_master.csv) if anything didn't resolve.
+instruments:
+  - exchange: NSE
+    segment: CASH
+    trading_symbol: NIFTY
+    label: NIFTY 50
+  - exchange: NSE
+    segment: CASH
+    trading_symbol: BANKNIFTY
+    label: BANK NIFTY
+  - exchange: BSE
+    segment: CASH
+    trading_symbol: SENSEX
+    label: SENSEX
